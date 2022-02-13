@@ -32,9 +32,13 @@ nav a {
   text-decoration: none;
 }
 
-.hero-section img{
-  display: flex;
-  align-content: center;
+.profile-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-height: 25%;
+  max-width: 25%;
 }
 
 nav a:hover{
@@ -48,7 +52,16 @@ main h3{
   margin-left: 10%;
 }
 
+main p{
+  color: white;
+  font-size: large;
+  max-width: 40%;
+  border: 1px solid blanchedalmond;
+  text-shadow: 2px 2px 5px black;
+  text-shadow: -2px -2px 5px black;
+}
 .main-container{
+  display:flex;
   border: 5px white;
   background: none;
 }
