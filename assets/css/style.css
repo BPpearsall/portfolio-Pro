@@ -1,34 +1,34 @@
-*{
+/* universal styling */
+* {
   box-sizing: border-box;
 }
-
+/* header margin resets */
 h1,
 h2,
-h3{
+h3 {
   margin: 0;
 }
-
-body{
+/* Body styling and background */
+body {
   background-color: white;
-  background-size:cover;
   margin: 0;
   padding: 0;
 }
-
-header{
+/* Header styling */
+header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding:40px;
+  padding: 40px;
   text-align: center;
   text-shadow: 2px 2px 4px black;
   background-color: rgb(178, 195, 195);
   box-shadow: 0 5px 35px red;
 }
-
-header h1{
+/* Header: Name Styling and formatting */
+header h1 {
   color: azure;
   font-size: 4em;
   line-height: 1;
@@ -37,13 +37,13 @@ header h1{
   margin: 0;
   padding: 5px 1% 5px 6%;
 }
-
-nav{
+/* Navigation Flex preperation */
+nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-
+/* Navigation Formatting and styling */
 nav a {
   margin-right: 10px;
   color: black;
@@ -52,18 +52,14 @@ nav a {
   font-size: 1.4rem;
   padding: 5px;
 }
-
-nav a:hover{
+/* Navigation Hover Functionality */
+nav a:hover {
   color: red;
   text-decoration: underline;
   background-size: 100% 100%;
 }
-
-nav a:last-child{
-  margin-right: 0;
-}
-
-.profile-image{
+/*  */
+.profile-image {
   display: block;
   margin: 20px auto;
   width: 50%;
@@ -71,15 +67,13 @@ nav a:last-child{
   max-width: 25%;
 }
 
-main{
+main {
   margin: 20px auto 45px auto;
   max-width: 85%;
 }
 
-
-
-.section-areas{
-  display:flex;
+.section-areas {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -90,7 +84,7 @@ main{
   background: none;
 }
 
-.section-areas h2{
+.section-areas h2 {
   color: rgb(0, 0, 0);
   flex: 0 0 20%;
   text-align: right;
@@ -100,7 +94,7 @@ main{
   line-height: 1.1;
 }
 
-.section-areas > div{
+.section-areas > div {
   flex: 0 0 77%;
 }
 
@@ -114,7 +108,7 @@ main{
   justify-content: center;
 }
 
-.box-items{
+.box-items {
   border: 5px solid red;
   background-color: aqua;
   color: brown;
@@ -127,7 +121,7 @@ main{
   text-decoration: none;
   background-blend-mode: soft-light;
   background-size: 150%;
-  transition:all 0.5s;
+  transition: all 0.5s;
   font-size: 0.9rem;
 }
 
@@ -136,62 +130,63 @@ main{
   flex-basis: 100%;
 }
 
-.box-items:hover{
-  opacity: .6;
-
+.box-items:hover {
+  opacity: 0.6;
 }
 
-.box-items div{
+.box-items div {
   background-color: aquamarine;
   padding: 8px 10px;
 }
 
-.box-items h3{
+.box-items h3 {
   font-size: 1.6rem;
 }
 
-.horiseon{
+.horiseon {
   background: local;
   background-image: url(/assets/images/Horiseon-Landing-Page.PNG);
   background-size: cover;
 }
 
-.contact-container{
-  border:5px solid red;
-  background-color: aqua;
-  color: brown;
+.contact-container {
   margin: 0.5em;
   text-decoration: none;
   transition: all 0.5s;
 }
 
-address{
-  border-right: 2px solid red;
+address {
   border-width: 25%;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-  margin: 6% 4.5em;
-  justify-content: space-between;
+  margin: 6%;
+  justify-content: flex-end;
   flex-direction: row;
   text-decoration: none;
 }
 
-.contact-container a{
+.contact-container a {
   text-decoration: none;
-  font-size: 3vw;
+  font-size: 2vw;
   background-blend-mode: soft-light;
-  transition:all 0.5s;
+  transition: all 0.5s;
+  background-color: white;
+  margin: 0px 10px;
+  padding-right: 16px;
+  border-right: 2px solid black;
 }
 
-.contact-container a:hover{
-  color:red;
+.contact-container a:last-child{
+  border: none;
+}
+
+.contact-container a:hover {
+  color: red;
   text-decoration: underline;
-  
 }
 
-@media screen and (max-width: 992px){
-  nav a{
+@media screen and (max-width: 992px) {
+  nav a {
     align-content: space-between;
   }
-  
 }
