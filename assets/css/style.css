@@ -147,7 +147,7 @@ main {
 
 .horiseon {
   background:left;
-  background-image: url(/assets/images/Horiseon-Landing-Page.jpg);
+  background-image: url(./assets/images/Horiseon-Landing-Page.jpg);
   background-size: cover;
   
 }
