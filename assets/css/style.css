@@ -34,6 +34,7 @@ header h1 {
   line-height: 1;
   font-weight: 100;
   background-color: black;
+  background:linear-gradient(217deg,black,black,grey,white);
   margin: 0;
   padding: 5px 1% 5px 6%;
 }
@@ -78,7 +79,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
-  margin: 25px 0;
+  margin: 5% 0;
   padding: 10px 0;
   border: 5px white;
   background: none;
@@ -100,6 +101,8 @@ main {
 
 .section-areas p {
   margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 1.1em;
 }
 
 .box-container {
@@ -185,8 +188,78 @@ address {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 992px) {
-  nav a {
-    align-content: space-between;
+@media screen and (max-width: 600px) {
+  header{
+    display:flex;
+    justify-content:center
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .section-areas p{
+    font-size: 8px;
+  }
+
+  .section-areas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .section-areas h2{
+    display: flex;
+    justify-content:center;
+    border-right: none;
+    border-bottom: 3px solid black;
+    margin: 10px 0;
+  }
+
+  .box-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-items{
+    display:flex;
+    align-content: stretch;
+    min-width: 95%;
+    max-width: 95%;
+  }
+
+  .box-items div {
+    background-color: aquamarine;
+    padding: 8px 10px;
+  }
+  
+  .box-items h3 {
+    font-size: 1rem;
+  }
+
+  address{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:auto;
+    padding: 4px;
+    border: none;
+  }
+
+  .contact-container{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact-container a{
+    font-size: 16px;
+    padding: 2px;
+    border:none;
+    display:flex;
+    justify-content: center;
+    
   }
 }
