@@ -10,7 +10,7 @@ h3 {
 }
 /* Body styling and background */
 body {
-  background-color: white;
+  background:linear-gradient(90deg, black 25%, white 25%);
   margin: 0;
   padding: 0;
 }
@@ -75,7 +75,6 @@ main {
 .section-areas {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
   margin: 5% 0;
@@ -85,11 +84,10 @@ main {
 }
 
 .section-areas h2 {
-  color: rgb(0, 0, 0);
+  color: white;
   flex: 0 0 20%;
   text-align: right;
   padding-right: 15px;
-  border-right: 4px solid black;
   font-size: 4vw;
   line-height: 1.1;
 }
@@ -153,19 +151,13 @@ main {
 }
 
 .contact-container {
+  display:flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;
   margin: 0.5em;
   text-decoration: none;
   transition: all 0.5s;
-}
-
-address {
-  border-width: 25%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 6%;
-  justify-content: flex-end;
-  flex-direction: row;
-  text-decoration: none;
 }
 
 .contact-container a {
@@ -199,8 +191,12 @@ address {
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+  body{
+    background: white;
+  }
   .section-areas p{
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .section-areas {
@@ -211,6 +207,7 @@ address {
   }
 
   .section-areas h2{
+    color:black;
     display: flex;
     justify-content:center;
     border-right: none;
