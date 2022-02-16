@@ -10,7 +10,7 @@ h3 {
 }
 /* Body styling and background */
 body {
-  background:linear-gradient(90deg, black 25%, white 25%);
+  background: linear-gradient(90deg, black 25%, white 25%);
   margin: 0;
   padding: 0;
 }
@@ -33,7 +33,7 @@ header h1 {
   font-size: 4em;
   line-height: 1;
   font-weight: 100;
-  background:linear-gradient(270deg,black,black,grey,white);
+  background: linear-gradient(270deg, black, black, grey, white);
   margin: 0;
   padding: 5px 1% 5px 6%;
 }
@@ -58,7 +58,7 @@ nav a:hover {
   text-decoration: underline;
   background-size: 100% 100%;
 }
-/*  */
+/* Profile-Image of me formatting */
 .profile-image {
   display: block;
   margin: 20px auto;
@@ -67,10 +67,14 @@ nav a:hover {
   max-width: 25%;
 }
 
+/* Margins for the main area of the portfolio */
+
 main {
   margin: 20px auto 45px auto;
   max-width: 85%;
 }
+
+/* Margins and flexing of each of the main section areas */
 
 .section-areas {
   display: flex;
@@ -83,6 +87,8 @@ main {
   background: none;
 }
 
+/* Section Header tags text formatting  */
+
 .section-areas h2 {
   color: white;
   flex: 0 0 20%;
@@ -92,21 +98,29 @@ main {
   line-height: 1.1;
 }
 
+/* About-Me flexbox position and margin */
+
 .section-areas > div {
-  flex: 0 0 77%;
+  flex: 0 0 75%;
 }
+
+/* About-Me text margins and font styling */
 
 .section-areas p {
   margin-bottom: 20px;
   line-height: 1.5;
-  font-size: 1.1em;
+  font-size: 1vw;
 }
+
+/* Projects/Homework Box Creation */
 
 .box-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
+/* Projects Box styling and padding */
 
 .box-items {
   border: 5px solid red;
@@ -125,40 +139,53 @@ main {
   font-size: 0.9rem;
 }
 
+/* Horiseon independent box styling */
+
 .box-items:first-child {
   min-height: 400px;
   flex-basis: 100%;
 }
 
+/* Hover modifier to indicate that you are moused over a project */
+
 .box-items:hover {
   opacity: 0.6;
 }
+
+/* Project title background color and padding */
 
 .box-items div {
   background-color: aquamarine;
   padding: 8px 10px;
 }
 
+/* Project Header Size */
+
 .box-items h3 {
   font-size: 1.6rem;
 }
 
+/* Horiseon Background image link and styling */
+
 .horiseon {
-  background:left;
+  background: left;
   background-image: url("../images/Horiseon-Landing-Page.jpg");
   background-size: cover;
-  
 }
 
+/* Contact-me box creation */
+
 .contact-container {
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin: 0.5em;
   text-decoration: none;
   transition: all 0.5s;
 }
+
+/* Contact-me font and margin styling */
 
 .contact-container a {
   text-decoration: none;
@@ -171,92 +198,127 @@ main {
   border-right: 2px solid black;
 }
 
-.contact-container a:last-child{
+/* Contact-me removal of last child's border right to make look nicer */
+
+.contact-container a:last-child {
   border: none;
 }
+
+/* Contact-me Hover modifier to style selecitons */
 
 .contact-container a:hover {
   color: red;
   text-decoration: underline;
 }
 
+/* Footer Tag for future design and perhaps more navigation options to go back up to the screen */
+
+footer {
+  display: flex;
+  align-content: flex-end;
+  background: blue;
+  background-color: blue;
+  max-height: 3vw;
+  min-height: 3vw;
+}
+
+/* Media screen that allows for better formatting in mobile formats */
+
 @media screen and (max-width: 600px) {
-  header{
-    display:flex;
-    justify-content:center
+  /* Mobile Format Header movement to center */
+
+  header {
+    display: flex;
+    justify-content: center;
   }
-  
+
+  /* Mobile Format Navigation movement to center and column */
+
   nav {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 
-  body{
+  /* Mobile Format forcing all background to be white to eliminate linear gradient in desktop format */
+
+  body {
     background: white;
   }
-  .section-areas p{
+
+  /* Mobile Format better font-size smaller screen */
+
+  .section-areas p {
     font-size: 10px;
   }
+
+  /* Mobile Format H2 and sections are ordered in columns to make better use of screen while sustaining readability */
 
   .section-areas {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
   }
 
-  .section-areas h2{
-    color:black;
+  /* Mobile Format Changing section header tags to be more thematically correct for mobile format */
+
+  .section-areas h2 {
+    color: black;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     border-right: none;
     border-bottom: 3px solid black;
     margin: 10px 0;
   }
 
-  .box-container{
-    display:flex;
+  /* Mobile Format changing the project boxes to align in column so avoid them getting too small */
+
+  .box-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .box-items{
-    display:flex;
+  /* Mobile Format changing the box-sizing to fill more of the screen and ignore original sizing */
+
+  .box-items {
+    display: flex;
     align-content: stretch;
     min-width: 95%;
     max-width: 95%;
   }
 
+  /* Mobile Format change the project titles to use less screen space */
+
   .box-items div {
     background-color: aquamarine;
     padding: 8px 10px;
   }
-  
+
+  /* Mobile Format change project header titles to use appropriate font-size */
+
   .box-items h3 {
     font-size: 1rem;
   }
 
-  address{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin:auto;
-    padding: 4px;
-    border: none;
-  }
+  /* Mobile Format change in flex-box behavior to all contact links to go into a column */
 
-  .contact-container{
+
+  /* Mobile Format change in spacing of each of the contact-me items */
+
+  .contact-container {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
   }
-  .contact-container a{
+
+  /* Mobile Format change in text-sizing for contact items */
+
+  .contact-container a {
     font-size: 16px;
     padding: 2px;
-    border:none;
-    display:flex;
+    border: none;
+    display: flex;
     justify-content: center;
-    
   }
 }
