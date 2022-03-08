@@ -136,7 +136,6 @@ main {
 
 .box-items {
   border: 5px solid red;
-  background-color: aqua;
   color: brown;
   min-height: 150px;
   max-height: 150px;
@@ -167,7 +166,7 @@ main {
 /* Project title background color and padding */
 
 .box-items div {
-  
+  background-color: aquamarine;
   padding: 8px 10px;
 }
 
