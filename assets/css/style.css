@@ -90,12 +90,24 @@ main {
 /* Section Header tags text formatting  */
 
 .section-areas h2 {
+  
   color: white;
   flex: 0 0 20%;
   text-align: right;
   padding-right: 15px;
   font-size: 4vw;
   line-height: 1.1;
+}
+
+.section-areas p a {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3vw;
+}
+
+.section-areas p a:hover {
+  color: red;
 }
 
 /* About-Me flexbox position and margin */
@@ -171,6 +183,24 @@ main {
   background: left;
   background-image: url("../images/Horiseon-Landing-Page.jpg");
   background-size: cover;
+}
+
+.watchNext{
+  background:top;
+  background-image: url("../images/watchNext-movie.PNG");
+  background-size:cover;
+}
+
+.codeQuiz {
+  background:top;
+  background-image: url("../images/question-screen-code-quiz.PNG");
+  background-size:cover;
+}
+
+.randomGenerator {
+  background:top;
+  background-image: url("../images/password-generator.PNG");
+  background-size:75%;
 }
 
 /* Contact-me box creation */
@@ -249,6 +279,11 @@ footer {
   /* Mobile Format better font-size smaller screen */
 
   .section-areas p {
+    font-size: 10px;
+  }
+
+  .section-areas p a {
+    color: black;
     font-size: 10px;
   }
 
